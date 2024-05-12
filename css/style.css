@@ -32,7 +32,7 @@ h4{
 .header {
   width: 100%;
   height: 650px;
-  background-image: url(/img/houseboat.jpg);
+  background-image: url(../img/houseboat.jpg);
   background-size: 100% 650px;
   background-repeat: no-repeat;
   color:  #1a6665;
@@ -302,25 +302,25 @@ h4{
 
 .gallery_div1 {
  
-  background-image: url(/img/1.jpg);
+  background-image: url(../img/1.jpg);
   background-size: 100% 500px;
   
 }
 .gallery_div2 {
  
-  background-image: url(/img/2.jpg);
+  background-image: url(../img/2.jpg);
   background-size: 100% 500px;
   
 }
 .gallery_div3 {
   
-  background-image: url(/img//bedroom-on-a-luxury-houseboat.webp);
+  background-image: url(../img//bedroom-on-a-luxury-houseboat.webp);
   background-size: 100% 500px;
   
 }
 .gallery_div4 {
   
-    background-image: url(/img/bg.jpg);
+    background-image: url(../img/bg.jpg);
     background-size: 100% 500px;
     
   }
@@ -346,7 +346,7 @@ h4{
 .contact-img{
   width: 100%;
   height: 500px;
-  background-image: url(/img/bg2.jpg);
+  background-image: url(../img/bg2.jpg);
   background-size: 100% 500px;
   display: flex;
   justify-content: center;
@@ -362,7 +362,7 @@ h4{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/img/bg2.jpg);
+  background-image: url(../img/bg2.jpg);
   background-size: cover;
   filter: blur(1px); /* Apply blur effect to the background image */
   opacity: 0.2; /* Adjust opacity for desired transparency */
