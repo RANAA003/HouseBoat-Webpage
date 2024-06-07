@@ -1,0 +1,538 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a; 
+}
+
+/* Styling for the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+background-color:#0a0808;
+  color:#e5d6e8; /* Black text */
+  padding: 15px 20px; /* Adjust padding as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  z-index: 1000; /* Ensure the navbar stays on top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for the logo */
+.logo {
+  font-size: 1.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+/* Styling for the navbar links */
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  right: 150px;
+}
+
+.navbar-links li {
+  margin-right: 60px; /* Adjust spacing between links */
+}
+
+.navbar-links li:last-child {
+  margin-right: 0; /* Remove margin for the last link */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: inherit; /* Inherit text color from parent */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar-links a:hover {
+  color: #555555; /* Darker color on hover */
+}
+
+/* Styling for the header with background image */
+.header {
+  background-image: url('../img/Concert-crowd-with-silhouettes-of-people-hold-their-hands-up.jpg'); /* Replace 'your-image-url.jpg' with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff; /* White text color */
+  animation: fadeInHeaderImage 3s ease; 
+}
+@keyframes fadeInHeaderImage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.header-content {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  animation: fadeIn 3s ease;
+ 
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+}
+
+/* Styling for the about section */
+.about {
+  display: flex;
+  padding: 100px 20px; /* Adjust padding as needed */
+  justify-content: center;
+  align-items: center;
+  animation: slideInLeft 5s forwards; 
+   
+}
+
+/* Styling for the text portion */
+.about-text {
+  position: relative;
+  bottom: 40px;
+  flex: 1;
+  padding: 0 40px; 
+  text-align:justify;/* Adjust spacing between text and image */
+  color: #ffffff; 
+  animation: slideInRight 5s forwards;/* White text color */
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 15px;
+ 
+}
+
+/* Styling for the image portion */
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+
+
+
+
+/* Styling for the Upcoming Events section */
+.upcoming-events {
+  text-align: center;
+  padding: 50px 100px;
+  background-color: #212121;
+padding-bottom: 80px;
+}
+
+.upcoming-events h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.events {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  
+  padding: 30px;
+}
+
+.event {
+  flex: 1;
+  max-width: 30%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: justify;
+  
+}
+
+.event:hover {
+  transform: scale(1.1);
+  
+}
+
+.event img {
+  width: 100%;
+ height: 150px;
+  border-radius: 10px;
+}
+
+.event h3 {
+  font-size: 1 rem;
+  margin-top: 20px;
+  color: white;
+ 
+}
+
+.event p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #777777;
+}
+
+
+.ticket-btn button {
+  padding: 10px 30px;
+  background-color: #510c5d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ticket-btn button:hover {
+  background-color: #6b1e76;
+}
+
+
+/* Styling for the contests section */
+.contests {
+  padding: 50px 100px;
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* White text color */
+  text-align: center;
+  padding-bottom: 80px;
+ 
+  
+}
+
+.contests h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+
+}
+
+.contest-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.contest {
+  flex: 1;
+  max-width: 300px;
+  padding:  0 20px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: #212121;
+  animation: fadeInContest 5s forwards;  /* Darker background color for each contest */
+}
+@keyframes fadeInContest {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.contest img {
+  width: 100%;
+  border-radius: 5px;
+  height: 150px;
+  transition: transform 0.3s ease;
+}
+.contest:hover img {
+  transform: scale(1.1);
+}
+
+@keyframes fadeInContest {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.contest h3 {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.contest p {
+  font-size: 0.7rem;
+  margin-top: 10px;
+}
+
+.register-btn {
+  padding: 8px 10px;
+  background-color: #510c5d;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.register-btn:hover{
+
+background-color: #0a060b;
+}
+
+.register-btn i {
+  margin-right: 5px;
+}
+
+
+
+/* Styling for the Image with Text overlay section */
+.image-with-text {
+  position: relative;
+  height: 400px; /* Adjust height as needed */
+  background-image: url('../img/bg.jpg'); /* Replace 'background-image.jpg' with your image URL */
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease; /* Add transition effect */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+}
+
+.image-with-text:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.overlay-content {
+  text-align: center;
+  color: white; /* Text color */
+  font-size: 2rem ;
+  padding: 20px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Add transition effect */
+}
+
+.image-with-text:hover .overlay-content {
+  opacity: 0.7; /* Show content on hover */
+}
+
+
+
+
+/* Styling for the contact section */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  justify-self: flex-start;
+  padding: 50px 20px;
+ 
+   background-color: #212121; /* Light background */
+  color: #333333; /* Dark text color */
+}
+
+/* Styling for the contact information box */
+.contact-info {
+  flex: 1;
+}
+
+.address {
+  padding: 0px 20px 20px 100px;
+ 
+  
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #e4e4e4; /* Dark text color */
+}
+
+.contact-info p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #b6b6b6; /* Medium text color */
+}
+
+/* Styling for the map */
+.map {
+  padding: 0 60px;
+  margin-left: 40px;
+}
+
+.map iframe {
+  width: 50%;
+  height: 250px; /* Adjust height as needed */
+  border: 0;
+  border-radius: 10px; /* Add border radius for a rounded appearance */
+}
+
+/* Styling for the message form */
+.message-form {
+
+  background-color: rgba(204, 204, 204, 0.8); /* Transparent white background */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px;/* Add border radius for a rounded appearance */
+  width: 30%;
+  position: relative;
+  right: 200px;
+ 
+}
+
+.message-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px 0;
+  color: #333333; /* Dark text color */
+}
+
+.message-form form {
+  width: 100%;
+}
+
+.message-form .form-group {
+  margin-bottom: 20px;
+}
+
+.message-form input[type="text"],
+.message-form input[type="email"],
+.message-form textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #dddddd;
+  opacity: 0.5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  color: #333333; /* Dark text color */
+  transition: border-color 0.3s ease; /* Add transition effect */
+}
+
+.message-form input[type="text"]:focus,
+.message-form input[type="email"]:focus,
+.message-form textarea:focus {
+  border-color: #777777; /* Darker border color on focus */
+}
+
+.message-form textarea {
+  resize: none; /* Disable resizing */
+  height: 100px; /* Adjust height as needed */
+}
+
+.message-form button {
+  padding: 15px 30px;
+  background-color: #510c5d;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.message-form button:hover {
+  background-color: #6b1e76; /* Darker background color on hover */
+}
+
+
+/* Styling for the footer */
+.footer {
+  background-color: #0a0808; /* Dark background color */
+  color: #e5d6e8; /* White text color */
+  padding: 30px 20px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+/* Styling for the footer content */
+.footer-content {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+/* Styling for the footer description */
+.footer-desc {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+/* Styling for social media icons */
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 10px; /* Adjust spacing between icons */
+}
+
+.social-icons li a {
+  color: #ffffff; /* White color for icon */
+  font-size: 24px; /* Adjust icon size as needed */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-icons li a:hover {
+  color: #555555; /* Darker color on hover */
+}
+
+/* Styling for copyright text */
+.copyright {
+  font-size: 14px; /* Adjust font size as needed */
+}
